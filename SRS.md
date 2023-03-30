@@ -7,7 +7,7 @@ Fill the document out following the guidelines listed in each section. Maintain 
 ## Group Members
 
 * [Matthew Young](mailto:myoun101@uncc.edu)
-* [Rahul Das](mmailto:rdas6@uncc.edu)
+* [Rahul Das](mailto:rdas6@uncc.edu)
 * [Name](mmailto:email@uncc.edu)
 * [Name](mmailto:email@uncc.edu)
 
@@ -19,7 +19,9 @@ When a change is made to the document, a new revision should be created. The rev
 | --- | --- | --- | --- | --- |
 | 1.0 | 03/22/23 | Initial draft | [David Gary](mailto:dgary9@uncc.edu)      | [David Gary](mailto:dgary@uncc.edu)       |
 | 1.1 | 03/23/23 | Added Name    | [Matthew Young](mailto:myoun101@uncc.edu) | [Matthew Young](mailto:myoun101@uncc.edu) | 
-|1.2 | 03/24/23  | Added Name | [Rahul-Das](mailto:rdas6@uncc.edu)|    [Rahul-Das](mailto:rdas6@uncc.edu)|
+| 1.2 | 03/24/23 | Added Name    | [Rahul-Das](mailto:rdas6@uncc.edu)        |    [Rahul-Das](mailto:rdas6@uncc.edu)     |
+| 1.3 | 03/29/23 | Added Requirements    | [Rahul-Das](mailto:rdas6@uncc.edu)        |    [Rahul-Das](mailto:rdas6@uncc.edu)     |
+| 1.4 | 03/30/23 | Fixing Stuff    | [Matthew Young](mailto:myoun101@uncc.edu) | [Matthew Young](mailto:myoun101@uncc.edu) | 
 
 ## Table of Contents
 
