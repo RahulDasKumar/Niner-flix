@@ -54,7 +54,7 @@ Each group member must supply at least three functional requirements for the pro
   * **Rationale:**Helps the user/customer find what they want without excess scrolling.
   * **Testing:**This can be tested by seeing if the implementation works on the front end. And unit test our back-end
   * **REQ-3:** A unique identifier for the requirement. This should be a number that is unique across the entire document (something like REQ-1, REQ-2, etc. but be sure to replace the word `ID` with the unique identifier).
-  * **Description:** Customers should be able to see the images of the movies
+  * **Description:** Customers should be able to see the images of the movie
   * **Type:** `Functional`
   * **Priority:** 5.
   * **Rationale:**Adds a pleasant visual to the customer on the website, helps locate the movie that they want..
