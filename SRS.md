@@ -22,6 +22,7 @@ When a change is made to the document, a new revision should be created. The rev
 | 1.2 | 03/24/23 | Added Name    | [Rahul-Das](mailto:rdas6@uncc.edu)        |    [Rahul-Das](mailto:rdas6@uncc.edu)     |
 | 1.3 | 03/29/23 | Added Requirements    | [Rahul-Das](mailto:rdas6@uncc.edu)        |    [Rahul-Das](mailto:rdas6@uncc.edu)     |
 | 1.4 | 03/30/23 | Fixing Stuff    | [Matthew Young](mailto:myoun101@uncc.edu) | [Matthew Young](mailto:myoun101@uncc.edu) | 
+| 1.4 | 03/30/23 | Added REQ-ACC    | [Matthew Young](mailto:myoun101@uncc.edu) | [Matthew Young](mailto:myoun101@uncc.edu) | 
 
 ## Table of Contents
 
@@ -73,7 +74,12 @@ In this section, you should list any constraints that you have for the project. 
 	* **Type**: `Functional`
 	* **Priority**: 3
 	* **Rationale**: Even more so than browsers, users can have a wide varity of internet speeds which can drastically effect the performance of websites, if a site is too bloated users may avoid it.
- 	* **Testing**: Testing can be done using chrome s throttling feature located within the network tab of the developer panel.
+  * **Testing**: Testing can be done using chrome s throttling feature located within the network tab of the developer panel.
+* **REQ-ACC**
+  * **Description**: The website should have a login system for users to use.
+  * **Type**: Functional
+  * **Rationale**: In order for users to utilize a cross-device shopping cart they will have to have an account.
+  * **Testing**: Testing will be done by creating accounts and utilizing several devices and/or private browsing to ensure the data is properly accessed and utilized.
 ## Constraints
 In this section, you should list any constraints that you have for the project. Each group member must supply at least two constraints. These can be constraints on the project itself, the software system, or the stakeholders. Constraints can be anything that limits the scope of the project. For example, that this project's template code is written using Flask and Python constitutes a constraint on the backend of the project. Constraints can also be things like the required timeline of the project. Be creative.
 * Project is to have comments describing the functionality of any custom methods, classes, and algorithms.
