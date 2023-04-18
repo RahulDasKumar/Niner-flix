@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Movie Store</title>
+</head>
+<body>
+    <header>
+        <h1>Movie Store</h1>
+        <a href="index.html">Home</a> |
+        <a href="movies.html">Catalog</a> |
+    </header>
+
+    <main>
+        <div>
+            <input id="searchbar" onkeyup="search()" type="text"
+            name="search" placeholder="Search..">
+            <script src="scripts/search.js"></script>
+        </div>
+        <div>
+            <h2>Movies:</h2>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img class="img" src="images/avatar.jpeg" alt="avatar">
+                <figcaption>Avatar The Way Of The Water (2022)</figcaption>
+            </div>
+            <div class="column">
+                <img class="img" src="images/spider_man.jpeg" alt="spider man">
+                <figcaption>Spider-Man No Way Home (2021)</figcaption>
+            </div>
+            <div class="column">
+                <img class="img" src="images/cat.jpeg" alt="cat">
+                <figcaption>Puss in Boots: The Last Wish (2022)</figcaption>
+            </div>
+            <div class="column">
+                <img class="img" src="images/batman.jpg" alt="batman">
+                <figcaption>The Batman (2022)</figcaption>
+            </div>
+            <div class="column">
+                <img class="img" src="images/dune.jpg" alt="dune">
+                <figcaption>Dune (2021)</figcaption>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+</html>
