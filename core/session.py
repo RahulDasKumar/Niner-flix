@@ -43,6 +43,21 @@ class UserSession:
                                     "discount": 0, "tax_rate": 0}
         return new_cart
 
+    def is_cart_empty(self) -> bool:
+        """
+        Checks if the cart dictionary is empty
+
+        args: None
+
+        returns:
+            - A boolean indicating whether or not the cart is empty
+        """
+        total = 0
+        for item in self.cart:
+            if (int(self.cart[item]["quantity"]) > 0):
+                total += 1
+        return total == 0
+
     def is_item_in_cart(self, id: str) -> bool:
         """
         Checks if an item is in the user's cart.

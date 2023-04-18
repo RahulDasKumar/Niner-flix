@@ -42,8 +42,36 @@ class Database:
         self.cursor.execute(
             "INSERT INTO inventory (item_name, price, info) VALUES (?, ?, ?)", (item_name, price, info))
         self.connection.commit()
+    # --------------------------------------------
+    # ----------------- MOVIES -------------------
+    # --------------------------------------------
+    def insert_new_movies(self, movies)->None:
+        self.cursor.execute("INSERT INTO movies (movie_title, genre, rating, summary, picture) VALUES (?, ?, ?, ?, ?)",
+                            (movies["title"],movies["genre"],movies["rating"],movies["summary"],movies["picture"]))
+        self.connection.commit()
+
+    def select_by_genre(self,genre:str):
+        self.cursor.execute("SELECT * FROM movies WHERE genre=?",(genre,))    
+        return self.cursor.fetchall()
+    
+    def select_by_title(self,title:str):
+        self.cursor.execute("SELECT * FROM movies WHERE movie_title LIKE?",('%'+title+'%',))
+        return self.cursor.fetchall()
+    
+    def select_by_rating_asc(self) :
+        self.cursor.execute("SELECT * FROM movies ORDER BY rating")
+        return self.cursor.fetchall()
+
+    def select_by_rating_desc(self):
+        self.cursor.execute("SELECT * FROM movies ORDER by rating DESC") 
+        return self.cursor.fetchall() 
+    
+    def get_all_movies(self):
+            self.cursor.execute("SELECT * FROM movies")
+            return self.cursor.fetchall()   
 
     # ------ Getter methods ------
+ 
 
     def get_full_inventory(self):
         """

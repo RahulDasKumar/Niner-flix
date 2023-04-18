@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #ffffff;
+}
+
+#title {
+    align-self: center;
+}
+
+.sub-headers {
+    align-self: center;
+}
+
+
+#filter-header {
+    align-self: center;
+}
+
+.header {
+    position: sticky;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+}
+
+#scroll-bar,
+#horror-bar,
+#action-bar,
+#comedy-bar,
+#history-bar {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+
+}
+
+
+#scroll-bar::-webkit-scrollbar {
+    display: none;
+}
+
+#horror-bar::-webkit-scrollbar {
+    display: none;
+}
+
+#action-bar::-webkit-scrollbar {
+    display: none;
+}
+
+#comedy-bar::-webkit-scrollbar {
+    display: none;
+}
+
+#history-bar::-webkit-scrollbar {
+    display: none;
+}
+
+.movie-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 16px;
+    margin: 1px;
+    width: 300px;
+    justify-content: flex-start;
+    transition: .8s;
+}
+
+.movie-container>h5 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #000000;
+
+}
+
+
+.picture-container>img {
+    height: 100px;
+    border-radius: 15%;
+    transition: .5s;
+}
+
+.scroll-section {
+    display: flex;
+    overflow: hidden;
+}

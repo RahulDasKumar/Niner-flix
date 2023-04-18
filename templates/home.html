@@ -3,6 +3,16 @@
 {% block content %}
 
 <div class="row" id="products_page">
+    
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {%if messages%}
+        <ul class="flashes">
+            {% for category, message in messages %}
+                <li class="{{ category }}">{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    {% endwith %}
     <div class="col-md-12">
         <h3>Products</h3>
         <hr>

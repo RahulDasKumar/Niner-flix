@@ -28,4 +28,11 @@ CREATE TABLE sales (
     FOREIGN KEY (username) REFERENCES users(username),
     FOREIGN KEY (item_id) REFERENCES inventory(id)
 );
-
+CREATE TABLE movies(
+    movies_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    movie_title VARCHAR(255) NOT NULL,
+    genre VARCHAR(255) NOT NULL,
+    rating VARCHAR(255) NOT NULL,
+    summary VARCHAR(255) NOT NULL,
+    picture VARCHAR(255) NOT NULL
+);
