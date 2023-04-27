@@ -97,7 +97,7 @@
 
 <body>
 
-    <div class="container">
+    <div class="container" data-closable>
         <div class="row">
             <div class="col-md-12">
                 <h1 id="title">Niner Flix</h1>
@@ -111,6 +111,7 @@
                         <div id="purchased-modal">
                             <li><button id="cart-button">View Cart</button></li>
                             <div id="modal-container">
+                                <button id='close' onclick='location.reload();'>x</button>
                                 <h1>Amount Purchased</h1>
                                 <h1 id="amount-text"></h1>
                                 <button id="cart-purchase">purchase</button>
