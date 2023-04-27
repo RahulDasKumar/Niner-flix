@@ -2,7 +2,7 @@
 
 *,
 html {
-    scroll-behavior: smooth !important;
+    /*scroll-behavior: smooth !important;*/
 }
 
 body {
@@ -52,6 +52,14 @@ ul {
     margin: 0;
     padding: 0;
     gap: 16px;
+}
+
+#header-left {
+    float: left;
+}
+
+#header-right {
+    float: right;
 }
 
 /*Allows the scroll sections to look more modern by hiding the scroll bars
@@ -184,6 +192,14 @@ and smoothens the scroll*/
     justify-content: center;
 }
 
+.arrow-container:hover {
+    transform: scale(2);
+}
+
+.arrow-container:active {
+    transform: scale(1.5);
+}
+
 
 
 .arrow-left {
@@ -264,5 +280,5 @@ and smoothens the scroll*/
     overflow: scroll;
     overflow-y: scroll;
     overflow-x: hidden;
-    scroll-behavior: smooth;
+    /*scroll-behavior: smooth;*/
 }

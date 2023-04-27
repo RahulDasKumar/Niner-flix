@@ -78,7 +78,7 @@
             });
 
             logout.appendChild(a);
-            header.appendChild(logout);
+            document.getElementById("header-right").appendChild(logout);
         }
 
         function createLoginButton() {
@@ -89,7 +89,7 @@
             a.innerHTML = "Login/Register";
 
             login.appendChild(a);
-            header.appendChild(login);
+            document.getElementById("header-right").appendChild(login);
         }
 
     </script>
@@ -108,6 +108,7 @@
                     <ul id="header-left" class="left-links">
                         <li><a href="/">About</a></li>
                         <li><a href="/movieHomepage">Store</a></li>
+<<<<<<< HEAD
                         <div id="purchased-modal">
                             <li><button id="cart-button">View Cart</button></li>
                             <div id="modal-container">
@@ -117,11 +118,24 @@
                                 <button id="cart-purchase">purchase</button>
                                 <div id="purchased-movies">
                                     <!--Generated Movie goes here-->
+=======
+                        <li>
+                            <div id="purchased-modal">
+                                <button id="cart-button">View Cart</button>
+                                <div id="modal-container">
+                                    <h1>Amount Purchased</h1>
+                                    <h1 id="amount-text"></h1>
+                                    <button id="cart-purchase">purchase</button>
+                                    <div id="purchased-movies">
+                                        <!--Generated Movie goes here-->
+                                    </div>
+>>>>>>> e713d78d0a736ca2b0339166147cca740e3fe7b5
                                 </div>
                             </div>
-                        </div>
+                        </li>
                     </ul>
                     <ul id="header-right" class="right-links">
+                        
                     </ul>
                 </div>
                 <hr>
