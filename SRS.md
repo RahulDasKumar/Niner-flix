@@ -27,7 +27,46 @@ When a change is made to the document, a new revision should be created. The rev
 | 1.7 | 03/29/23 | Added Requirements    | [Rahul-Das](mailto:rdas6@uncc.edu)        |    [Rahul-Das](mailto:rdas6@uncc.edu)     |
 | 1.8 | 04/01/23 | Added Requirements   | [Akhil Adusumilli](mailto:aadusumi@uncc.edu) | [Akhil Adusumilli](mailto:aadusumi@uncc.edu) | 
 | 1.9 | 04/4/23 | Added Name    | [Artem Dyadchenko](adyadche@uncc.edu)        |    [Artem Dyadchenko](adyadche@uncc.edu)     | 
-| 1.10 | 04/4/23 | Added Requirements  | [Artem Dyadchenko](adyadche@uncc.edu)  |    [Artem Dyadchenko](adyadche@uncc.edu)     |
+| 1.10 | 04/4/23| Added Requirements  | [Artem Dyadchenko](adyadche@uncc.edu)  |    [Artem Dyadchenko](adyadche@uncc.edu)     |
+|1.11  |04/4/23 | Added diagrams for use cases| [Rahul Das](mailto:rdas6@uncc.edu)|  [Rahul Das][mailto:rdas6@uncc.edu]       |
+|1.12  |04/4/23 | Added diagrams for users| [Rahul Das](mailto:rdas6@uncc.edu)|  [Rahul Das][mailto:rdas6@uncc.edu]       |
+|1.13  |04/4/23 | Added diagrams for sequences| [Rahul Das](mailto:rdas6@uncc.edu)|  [Rahul Das][mailto:rdas6@uncc.edu]       |
+|1.14  |04/5/23 | Added filter diagrams for use casses| [Rahul Das](mailto:rdas6@uncc.edu)|  [Rahul Das][mailto:rdas6@uncc.edu]|
+|1.15  |04/5/23 | Removed uses of password.txt| [Matthew Young](mailto:myoun101@uncc.edu)|  [Matthew Young](mailto:myoun101@uncc.edu) |
+|1.16  |04/10/23 | Added batch files and sqlite executables for windows| [Matthew Young](mailto:myoun101@uncc.edu)|  [Matthew Young](mailto:myoun101@uncc.edu) |
+|1.17  |04/13/23 | checkout backend changes| [Matthew Young](mailto:myoun101@uncc.edu)|  [Matthew Young](mailto:myoun101@uncc.edu) |
+|1.18  |04/4/23 | added movie webscraping to populate db| [Rahul Das](mailto:rdas6@uncc.edu)|  [Rahul Das][mailto:rdas6@uncc.edu]       |
+|1.19  |04/4/23 | added movie filtering end points| [Rahul Das](mailto:rdas6@uncc.edu)|  [Rahul Das][mailto:rdas6@uncc.edu]       |
+|1.20  |04/4/23 | added homepage that dynamically adds all movie items| [Rahul Das](mailto:rdas6@uncc.edu)|  [Rahul Das][mailto:rdas6@uncc.edu]       |
+|1.21  |04/4/23 | adding cors package to requirements.txt| [Rahul Das](mailto:rdas6@uncc.edu)|  [Rahul Das][mailto:rdas6@uncc.edu]       |
+|1.22  |04/4/23 | debloated script.js using closure| [Rahul Das](mailto:rdas6@uncc.edu)|  [Rahul Das][mailto:rdas6@uncc.edu]       |
+|1.23  |04/4/23 | Starting Shopping Cart DB | [Matthew Young](mailto:myoun101@uncc.edu)|  [Matthew Young](mailto:myoun101@uncc.edu) |
+|1.24  |04/13/23 |Update requirements.txt| [Matthew Young](mailto:myoun101@uncc.edu)|  [Matthew Young](mailto:myoun101@uncc.edu) |
+|1.25  |04/19/23 |added backend login functionality| [Matthew Young](mailto:myoun101@uncc.edu)|  [Matthew Young](mailto:myoun101@uncc.edu) |
+|1.26  |04/19/23 | added front end foundations and the formatting of the store website| [Rahul Das](mailto:rdas6@uncc.edu)|  [Rahul Das][mailto:rdas6@uncc.edu]       |
+|1.27  |04/19/23 | added summarys for each movie when clicked on| [Rahul Das](mailto:rdas6@uncc.edu)|  [Rahul Das][mailto:rdas6@uncc.edu]       |
+|1.28  |04/19/23 | deleted unnessecary css lines and documented the file| [Rahul Das](mailto:rdas6@uncc.edu)|  [Rahul Das][mailto:rdas6@uncc.edu]       |
+|1.29  |04/19/23 |added homepage for movies| [Rahul Das](mailto:rdas6@uncc.edu)|  [Rahul Das][mailto:rdas6@uncc.edu]       |
+|1.30  |04/20/23 |integrated front end pages with flask layout| [Matthew Young](mailto:myoun101@uncc.edu)|  [Matthew Young](mailto:myoun101@uncc.edu) |
+|1.31  |04/20/23 |changed movie db to add price| [Matthew Young](mailto:myoun101@uncc.edu)|  [Matthew Young](mailto:myoun101@uncc.edu) |
+|1.32  |04/20/23 |made movie scraper multithreaded(increased efficiency by 400%)| [Matthew Young](mailto:myoun101@uncc.edu)|  [Matthew Young](mailto:myoun101@uncc.edu) |
+|1.33  |04/24/23 |added username saved for sessions| [Rahul Das](mailto:rdas6@uncc.edu)|  [Rahul Das][mailto:rdas6@uncc.edu]       |
+|1.34  |04/24/23 |added end points from db for purchasing| [Rahul Das](mailto:rdas6@uncc.edu)|  [Rahul Das][mailto:rdas6@uncc.edu]       |
+|1.35  |04/24/23 |added post and delete methods in backend| [Rahul Das](mailto:rdas6@uncc.edu)|  [Rahul Das][mailto:rdas6@uncc.edu]       |
+|1.36  |04/24/23 |made backend more effecient, cleaned the code for backend| [Matthew Young](mailto:myoun101@uncc.edu)|  [Matthew Young](mailto:myoun101@uncc.edu) |
+|1.37  |04/24/23 |finished the cart implementation in the front end, added dynamic adding| [Rahul Das](mailto:rdas6@uncc.edu)|  [Rahul Das][mailto:rdas6@uncc.edu]       |
+|1.38  |04/24/23 |added pictures that users bought being seen in the cart| [Rahul Das](mailto:rdas6@uncc.edu)|  [Rahul Das][mailto:rdas6@uncc.edu]       |
+|1.39  |04/24/23 |added a purchase button that resets data of the user| [Rahul Das](mailto:rdas6@uncc.edu)|  [Rahul Das][mailto:rdas6@uncc.edu]       |
+|1.40  |04/20/23 |scroll fix, didnt work on some laptop before| [Matthew Young](mailto:myoun101@uncc.edu)|  [Matthew Young](mailto:myoun101@uncc.edu) |
+|1.41  |04/24/23 |changed it back to default, wasnt working| [Rahul Das](mailto:rdas6@uncc.edu)|  [Rahul Das][mailto:rdas6@uncc.edu]       |
+|1.42  |04/24/23 |finalized scrolling, it works now| [Matthew Young](mailto:myoun101@uncc.edu)|  [Matthew Young](mailto:myoun101@uncc.edu) |
+| 1.43 | 04/27/23 | Added close button in cart   | [Akhil Adusumilli](mailto:aadusumi@uncc.edu) | [Akhil Adusumilli](mailto:aadusumi@uncc.edu) | 
+
+
+
+
+
+
 
 ## Table of Contents
 
