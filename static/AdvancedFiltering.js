@@ -25,6 +25,7 @@ async function findMoviesPurchased() {
         purchasedMovies.removeChild(purchasedMovies.firstChild);
         console.log("removing")
     }
+    //array that holds the id in the array
     let movieIdArray = [];
     const response = await fetch('/cart', {
         method: "POST",
@@ -37,9 +38,11 @@ async function findMoviesPurchased() {
     })
         .catch(err => console.log(err))
     const data = await response.json()
+    //pushes the movie ids into the array
     for (let i = 0; i < data.length; i++) {
         movieIdArray.push(data[i].movie_id)
     }
+    //references the array with movie ids to output the corresponding movies
     for (let i = 0; i < movieIdArray.length; i++) {
         const allMovies = await fetch(`/movies/id/${movieIdArray[i]}`).
             then().
@@ -51,7 +54,6 @@ async function findMoviesPurchased() {
 }
 /*
 *Updates the amount of movies bought
-*
 */
 async function updateAmountPurchased() {
     const modalInfo = document.getElementById('amount-text');
@@ -118,7 +120,7 @@ function movieGenerator(id, genre, title, picture, summary, rating, divID) {
     purchaseButton.textContent = 'Buy'
     purchaseButton.className = 'purchase-button'
     purchaseDiv.append(purchaseSummary, purchaseButton)
-    //************************************************************** */
+    //*Allows to expand and collapse to see movie info */
     closeButton.addEventListener('click', () => {
         console.log('i am being clicked')
         if (purchaseDiv.style.display === 'block') {
@@ -145,6 +147,7 @@ function movieGenerator(id, genre, title, picture, summary, rating, divID) {
     //appending the data to the elements
     movie_title.textContent = title
     movie_picture.src = picture
+    // buy button functionality
     purchaseButton.addEventListener('click', async () => {
         await fetch('/purchase',
             {
@@ -209,7 +212,7 @@ document.getElementById('left-all-movies').onclick = () => scrollHandler('rating
 document.getElementById('right-all-movies').onclick = () => scrollHandler('rating-bar').rightButton()
 
 /*
-*
+*Duplicate function from script.js, opens up the div to see cart
 */
 document.getElementById('cart-button').onclick = () => {
     updateAmountPurchased();

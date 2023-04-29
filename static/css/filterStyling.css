@@ -14,7 +14,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
+/*------------------Button Styling--------------------*/
 .arrow-button {
     width: 100px;
     height: 100px;
@@ -62,7 +62,7 @@ body {
     border-width: 3px 3px 0 0;
     transform: rotate(45deg);
 }
-
+/*-------FIlter by rating section styling----------------*/
 .scroll-section {
     display: flex;
     flex-direction: row;
@@ -78,7 +78,7 @@ body {
     scroll-behavior: smooth;
 }
 
-
+/*----------Movie container formatting and styling-------------*/
 .movie-container {
     display: flex;
     flex-direction: column;
@@ -191,7 +191,7 @@ body {
     border-width: 3px 3px 0 0;
     transform: rotate(45deg);
 }
-
+/*---------Movie card button styling----------------*/
 .movie-button {
     background-color: transparent;
     border-color: transparent;
@@ -207,7 +207,7 @@ body {
     border-radius: 10%;
     color: #ffffff;
 }
-
+/*---------------Cart styling------------------------*/
 #modal-container {
     display: flex;
     position: fixed;
@@ -266,7 +266,7 @@ input {
     margin-bottom: 16px;
 
 }
-
+/*-------------Search bar container div */
 .content {
     flex: 1;
     display: flex;
@@ -274,7 +274,7 @@ input {
     justify-content: center;
     flex-direction: column;
 }
-
+/*-------------The div that holds all of the movie cards in the search by title section*/
 #search-container {
     display: flex;
     flex-wrap: wrap;
@@ -285,12 +285,12 @@ input {
     overflow-x: hidden;
 
 }
-
+/*-------------Sets the moviecard height in search by title section */
 #search-container>div {
     width: 350px;
     height: 350px;
 }
-
+/*--------------------Hides scroll bar---------------------------*/
 #search-container::-webkit-scrollbar {
     display: none;
 }
@@ -298,7 +298,7 @@ input {
 #rating-bar::-webkit-scrollbar {
     display: none;
 }
-
+/*-------------------Styling for filtering buttons--------------------*/
 .Titles {
     font-family: 'News Cycle', sans-serif;
     color: #ffffff;
@@ -319,7 +319,7 @@ input {
     /* Green */
     color: white;
 }
-
+/*--------------------Changes font in the movie div summary to white ------------------------*/
 .purchase-container>a {
     color: #ffffff;
 }
