@@ -34,6 +34,12 @@ def index_page():
     return render_template('index.html', username=None)
  #
 
+ 
+@app.route('/filter')
+def filter_page():
+    return render_template('advancedSearch.html',username=usernameGlobal)
+
+
 @app.route('/landingPage')
 def land_page():
     return render_template('homepage.html')

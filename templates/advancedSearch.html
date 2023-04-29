@@ -1,6 +1,5 @@
-<!-- Template HTML file  -->
-<!DOCTYPE html>
-<html>
+{% block content %}
+<link rel="stylesheet" href="/static/css/filterStyling.css">
 
 <head>
     <title>Private Online Store</title>
@@ -96,49 +95,64 @@
 </head>
 
 <body>
+    <div class="col-md-12">
+        <h1 id="title">Niner Flix</h1>
+        <p class="first-header-subtext">We have over 200+ of the highest rated movies of all time!! What are you
+            waiting for? Sign up today!</p>
+        <h5 id="welcomeHeader">Welcome!</h5>
+        <div id="header" class="header">
+            <ul id="header-left" class="left-links">
+                <li><a href="/">About</a></li>
+                <li><a href="/movieHomepage">Store</a></li>
+                <li><a href="/filter">Filter</a></li>
+                <li>
+                    <div id="purchased-modal">
+                        <button id="cart-button">View Cart</button>
+                        <div id="modal-container">
+                            <button id='close' onclick="this.parentNode.style.display='none';">x</button>
+                            <h1>Amount Purchased</h1>
+                            <h1 id="amount-text"></h1>
+                            <button id="cart-purchase">purchase</button>
+                            <div id="purchased-movies">
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 id="title">Niner Flix</h1>
-                <p class="first-header-subtext">We have over 200+ of the highest rated movies of all time!! What are you
-                    waiting for? Sign up today!</p>
-                <h5 id="welcomeHeader">Welcome!</h5>
-                <div id="header" class="header">
-                    <ul id="header-left" class="left-links">
-                        <li><a href="/">About</a></li>
-                        <li><a href="/movieHomepage">Store</a></li>
-                        <li><a href="/filter">Filter</a></li>
-                        <li>
-                            <div id="purchased-modal">
-                                <button id="cart-button">View Cart</button>
-                                <div id="modal-container">
-                                    <button id='close' onclick="this.parentNode.style.display='none';">x</button>
-                                    <h1>Amount Purchased</h1>
-                                    <h1 id="amount-text"></h1>
-                                    <button id="cart-purchase">purchase</button>
-                                    <div id="purchased-movies">
-                                        <!--Generated Movie goes here-->
-                                    </div>
-                                </div>
                             </div>
-                        </li>
-                    </ul>
-                    <ul id="header-right" class="right-links">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="header-right" class="right-links">
 
-                    </ul>
+            </ul>
+        </div>
+        <div id="rating-header">
+            <h1 class="Titles">Filter by Rating</h1>
+            <div><button id="highest-rated" class="filter-button">Highest Rated</button>
+                <button id="lowest-rated" class="filter-button">Lowest Rated</button>
+            </div>
+        </div>
+        <div class="scroll-section">
+            <div class="arrow-button">
+                <div class="arrow-container" id="left-all-movies">
+                    <i class="arrow-left"></i>
                 </div>
-                <hr>
-                <div class="content">
-                    <!-- This is where the content will be rendered -->
-                    {% block content %}{% endblock %}
-
-                </div>
-
-                <div class="footer">
-                    <p> Copyright © ITSC 3155 </p>
+            </div>
+            <div id="rating-bar">
+            </div>
+            <div class="arrow-button">
+                <div class="arrow-container" id="right-all-movies">
+                    <i class="arrow-right"></i>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="content">
+            <h1 id="name-header" class="Titles">Search by Name</h1>
+            <div id="input">
+                <input type="text">
+            </div>
+            <div id="search-container">
+
+            </div>
+        </div>
+        <script src="/static/AdvancedFiltering.js"></script>
 </body>
+{% endblock %}
